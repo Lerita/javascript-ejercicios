@@ -1,27 +1,6 @@
-/**
- Hacer que cuando se haga click en los puntos de control del slider,
- cambie a la imagen y al titulo correspondiente, y se ponga la clase
- "selected" en el punto de control clickeado y se elimine de los demás,
- usando para eso una funcion con nombre cambiarImagen, que tome por parámetro
- el número de la imagen a la que se desea cambiar
- */
+numeroImagenAnterior = 1;
 
-//  let cambiarImagen = function(id) {
-//      let image = document.getElementById(id);
-//      image.classList.toggle("hidden");
-//  }
-
-
-// for(i = 1; i < 5; i++) {
-//     let element = document.getElementById(`imagen-animal`);
-//     element.onclick = function() {
-//         cambiarImagen(`dot_${i}.jpg`);
-//     }
-// }
-
-numeroImagenAnterior = 1; 
-
-let cambiarImagen = function(numeroImagen) {
+let cambiarImagen = function (numeroImagen) {
     let image = document.getElementById("imagen-animal");
     image.src = `imagen_${numeroImagen}.jpg`;
 
@@ -57,5 +36,5 @@ let cambiarImagen = function(numeroImagen) {
 //     document.getElementById(`dot_${i}`).onclick = function() {
 //         cambiarImagen(i);
 //     }
-    
+
 // }
